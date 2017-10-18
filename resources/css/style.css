@@ -9,6 +9,47 @@ div, nav, header, img, span {
   border: 1px solid gray;
 }
 
+/* Text Elements */
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2em;
+}
+
+h2 {
+  color: rgba(0, 0, 0, .7);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+
+h3 {
+  color: rgba(0, 0, 0, .7);
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+p {
+  color: rgba(0, 0, 0, .6);
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+  letter-spacing: .025rem;
+}
 
 header {
 
@@ -90,11 +131,7 @@ nav li, nav li a {
 }
 
 .bnnr h1 {
-  color: rgba(0, 0, 0, .7);
-  font-size: 3rem;
-  font-weight: 800;
   padding: 2rem 0rem;
-  line-height: 1.2em;
 }
 
 .bnnr h2 {
@@ -107,12 +144,49 @@ nav li, nav li a {
 .btn {
   font-size: 1.2rem;
   color: white;
-  background-color: gray;
+  background-color: rgba(0, 0, 0, .65);
   text-align: center;
   padding: 1rem 0rem;
   margin: 2rem 0rem;
-  border-radius: 4px;
 }
+
+/* Content Section */
+
+.content {
+  display: flex;
+}
+
+.content-left {
+  display: flex;
+  flex-flow: column wrap;
+  width: 60.1%;
+  padding: 2rem 2rem 1.5rem 1.5rem;
+}
+
+.content-left h3 {
+  padding: 2rem 0rem 1.5rem 0rem;
+}
+
+.content-left p {
+  padding: 0rem 3rem 2rem 0rem;
+}
+
+.subtext {
+  margin-bottom: 2rem;
+  color: rgba(0, 0, 0, .8);
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+.feature {
+
+}
+
+.content.right {
+  display: flex;
+}
+
+
 
 
 
