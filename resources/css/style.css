@@ -4,28 +4,29 @@ html {
   font-weight: 400;
 }
 
-/*borders to see elements*/
+/*borders to see elements
 div, nav, header, img, span {
-  border: 1px solid gray;
-}
+  border: 1px solid green;
+}*/
 
 /* Text Elements */
 
 h1 {
+  color: #222;
   font-size: 3rem;
   font-weight: 800;
   line-height: 1.2em;
 }
 
 h2 {
-  color: rgba(0, 0, 0, .7);
+  color: #444;
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.4em;
 }
 
 h3 {
-  color: rgba(0, 0, 0, .7);
+  color: #333;
   font-size: 2.75rem;
   font-weight: 700;
   line-height: 1.2em;
@@ -96,16 +97,26 @@ nav span {
 
 nav ul {
   list-style: none;
+  height: 100%;
 }
 
 nav li {
-  margin-right: 1rem;
+  padding: 0rem .25rem;
+  margin-right: .5rem;
+  height: inherit;
 }
 
 nav li, nav li a {
+  line-height: 3.5rem;
+  vertical-align: middle;
   display: inline-block;
   text-decoration: none;
   color: black;
+  transition: all 250ms ease 0ms;
+}
+
+nav li:hover {
+  background-color: rgba(0, 0, 0, .09);
 }
 
 /* Banner Section */
@@ -140,6 +151,10 @@ nav li, nav li a {
   line-height: 1.4em;
 }
 
+.cntr a {
+  text-decoration: none;
+}
+
 .btn {
   font-size: 1.2rem;
   color: white;
@@ -147,6 +162,11 @@ nav li, nav li a {
   text-align: center;
   padding: 1rem 0rem;
   margin: 2rem 0rem;
+  transition: all 250ms ease 0ms;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, .8);
 }
 
 /* Content Section */
@@ -154,6 +174,8 @@ nav li, nav li a {
 .content {
   display: flex;
   margin: .2rem 0rem;
+  width: 100%;
+  justify-content: center;
 }
 
 .content-left {
@@ -234,7 +256,7 @@ nav li, nav li a {
 }
 
 .info p {
-  padding: .1rem 0rem;
+  padding: .4rem 1.2rem .4rem 0rem;
 }
 
 .top {
@@ -252,6 +274,62 @@ nav li, nav li a {
   border-top: 2px solid rgba(0, 0, 0, .09);
 }
 
+/* Classes section */
+
+.content2 {
+    display: flex;
+    width: 100%;
+    background-color: gainsboro;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content2 h3 {
+  margin: 2.5rem 0rem;
+}
+
+.classes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  max-width: 1400px;
+}
+
+.class {
+  margin: 0rem 1.5rem;
+  width: 24rem;
+  background-color: white;
+  margin-bottom: 2rem;
+}
+
+.class .info {
+  margin: 0rem;
+  border: 0px;
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.class .info h2 {
+  line-height: 2rem;
+}
+
+.class img {
+  width: inherit;
+}
+
+/* Thesis exhibit */
+
+.thesis {
+  margin: 2rem 0rem;
+  text-align: center;
+}
+
+.video {
+  object-fit: cover;
+}
+
+
+
+
 /* Mobile */
 
 @media only screen and (max-width: 650px) {
@@ -268,3 +346,7 @@ nav li, nav li a {
     display: none;
   }
 }
+
+
+
+/* Change all font colors to COLOR rather than TRANSPARENCY before final */
