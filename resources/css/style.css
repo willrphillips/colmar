@@ -45,7 +45,7 @@ h6 {
 }
 
 p {
-  color: rgba(0, 0, 0, .6);
+  color: rgba(100, 100, 100, 1);
   font-size: 1.25rem;
   font-weight: 500;
   line-height: 1.9rem;
@@ -298,8 +298,15 @@ nav li:hover {
 .class {
   margin: 0rem 1.5rem;
   width: 24rem;
-  background-color: white;
   margin-bottom: 2rem;
+  filter: brightness(75%);
+  transition: all 250ms ease 0ms;
+}
+
+.class:hover {
+  filter: brightness(100%);
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 4px 6px 30px 2px rgba(0,0,0,0.35);
 }
 
 .class .info {
@@ -314,6 +321,7 @@ nav li:hover {
 
 .class img {
   width: inherit;
+  filter: brightness(60%);
 }
 
 /* Thesis exhibit */
@@ -323,12 +331,40 @@ nav li:hover {
   text-align: center;
 }
 
-.video {
-  object-fit: cover;
+.content-left h2 {
+  padding: 1.5rem 0rem;
 }
 
+.content-left.exhibit {
+  border: 0px solid white;
+}
 
+/* Footer */
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+  margin: 0rem .5rem;
+  border-top: 2px solid rgba(0, 0, 0, .09);
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+}
+
+footer li a {
+  padding: 1rem 2rem 0rem 0rem;
+  text-decoration: none;
+  color: #333;
+}
+
+footer p {
+  font-size: 1rem;
+  padding: 1rem 0rem 1rem 1.5rem;
+}
 
 /* Mobile */
 
