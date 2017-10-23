@@ -4,10 +4,10 @@ html {
   font-weight: 400;
 }
 
-/*borders to see elements
+/*borders to see elements*/
 div, nav, header, img, span {
   border: 1px solid green;
-}*/
+}
 
 /* Text Elements */
 
@@ -115,9 +115,7 @@ nav li, nav li a {
   transition: all 250ms ease 0ms;
 }
 
-nav li:hover {
-  background-color: rgba(0, 0, 0, .09);
-}
+
 
 /* Banner Section */
 
@@ -163,10 +161,6 @@ nav li:hover {
   padding: 1rem 0rem;
   margin: 2rem 0rem;
   transition: all 250ms ease 0ms;
-}
-
-.btn:hover {
-  background-color: rgba(0, 0, 0, .8);
 }
 
 /* Content Section */
@@ -238,9 +232,6 @@ nav li:hover {
   justify-content: center;
 }
 
-.feature:hover {
-  background-color: rgba(0, 0, 0, .09);
-}
 
 .info {
   padding-left: 1.5rem;
@@ -274,6 +265,40 @@ nav li:hover {
   border-top: 2px solid rgba(0, 0, 0, .09);
 }
 
+.mobile .content-right {
+  width: 100%;
+}
+
+.mobile .feature {
+  width: 100%;
+  flex-direction: column;
+  height: auto;
+  border: none;
+  padding: .5rem 0rem;
+}
+
+.mobile .feature .info {
+  width: 100%;
+  padding: 0rem;
+}
+
+.mobile .feature img {
+  height: inherit;
+  width: 100%;
+}
+
+.mobile h2 {
+  padding: 1rem;
+  line-height: inherit;
+}
+
+.mobile p {
+  padding: .25rem 1rem;
+  font-size: .9rem;
+  line-height: 1rem;
+}
+
+
 /* Classes section */
 
 .content2 {
@@ -303,12 +328,6 @@ nav li:hover {
   transition: all 250ms ease 0ms;
 }
 
-.class:hover {
-  filter: brightness(100%);
-  background-color: rgba(255, 255, 255, 1);
-  box-shadow: 4px 6px 30px 2px rgba(0,0,0,0.35);
-}
-
 .class .info {
   margin: 0rem;
   border: 0px;
@@ -321,7 +340,7 @@ nav li:hover {
 
 .class img {
   width: inherit;
-  filter: brightness(60%);
+
 }
 
 /* Thesis exhibit */
@@ -366,9 +385,108 @@ footer p {
   padding: 1rem 0rem 1rem 1.5rem;
 }
 
-/* Mobile */
+/* Hi Res PC */
 
-@media only screen and (max-width: 650px) {
+@media only screen and (min-width: 1051px) {
+  nav li:hover {
+    background-color: rgba(0, 0, 0, .09);
+  }
+
+  .btn:hover {
+    background-color: rgba(0, 0, 0, .8);
+  }
+
+  .feature:hover {
+    background-color: rgba(0, 0, 0, .09);
+  }
+
+  .class:hover {
+    filter: brightness(105%);
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 4px 6px 30px 2px rgba(0,0,0,0.35);
+  }
+
+}
+
+/* Low Res PC */
+
+@media only screen and (max-width: 1050px) and (min-width: 766px) {
+  nav li:hover {
+    background-color: rgba(0, 0, 0, .09);
+  }
+
+  .btn:hover {
+    background-color: rgba(0, 0, 0, .8);
+  }
+
+  .feature:hover {
+    background-color: rgba(0, 0, 0, .09);
+  }
+
+  .class:hover {
+    filter: brightness(105%);
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 4px 6px 30px 2px rgba(0,0,0,0.35);
+  }
+
+  .bnnr .cntr {
+    margin: 0rem 5% 0rem .5rem
+  }
+
+  .feature img {
+    height: 75%;
+  }
+
+  .feature {
+    padding: 0rem;
+  }
+
+  .info {
+    padding-left: 1rem;
+  }
+
+  .class {
+    width: 15rem;
+  }
+
+  h1 {
+    font-size: 2.75rem;
+    line-height: 2.5rem;
+  }
+
+  .bnnr h2, h2 {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+
+  .info h2 {
+    line-height: 2rem;
+  }
+
+  .content-left h3, h3 {
+    font-size: 2rem;
+    padding: 1.5rem 0rem 1rem 0rem;
+  }
+
+  .content2 h3, .thesis {
+    margin: .5rem 0rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+
+  .info p {
+    font-size: .75rem;
+    line-height: 1rem;
+  }
+
+}
+
+/* Tablet */
+
+@media only screen and (max-width: 765px) {
   .mobile {
     display: flex;
   }
@@ -381,8 +499,112 @@ footer p {
   .pc {
     display: none;
   }
+
+  .bnnr, .content {
+    flex-direction: column;
+  }
+
+  .feature .info {
+    text-align: center;
+  }
+
+  .bnnr .top, .bnnr .cntr, .content {
+    width: 100%;
+    padding: 0rem;
+    margin: 0rem;
+  }
+
+  h1, .bnnr h1 {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  h2, .bnnr h2 {
+    font-size: 1.1rem;
+    padding: .5rem 1rem;
+  }
+
+  .btn {
+    margin: 1rem;
+  }
+
+  .lower.content-left {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .content2.lower {
+    background-color: white;
+    border-top: 1px solid lightgray;
+  }
+
+  .content2 h3, .thesis {
+    font-size: 2rem;
+    margin: 1rem 0rem;
+  }
+
+  .class {
+    margin: 0rem 1rem .5rem 1rem;
+    filter: brightness(100%);
+    width: 100%;
+
+  }
+
+  .class img, .class p {
+    display: none;
+  }
+
+  .class .info {
+    padding: .75rem;
+    background-color: rgba(200, 200, 200, 1);
+  }
+
+  .class h2 {
+    padding: 0rem;
+  }
+
+  .mobile h2 {
+    padding: .5rem 0rem;
+  }
+
+  .exhibit.content-left {
+    width: 100%;
+    padding: 0rem 0rem 1rem 0rem;
+  }
+
+  .exhibit h2, .exhibit p {
+    display: none;
+  }
+
+  footer {
+    border: none;
+    padding: .5rem 0rem 1rem 1rem;
+    margin: 0rem;
+  }
+
+  footer p {
+    padding: 0rem;
+    font-size: .8rem;
+  }
+
+  footer ul {
+    display: none;
+  }
+
+  p {
+    font-size: .8rem;
+  }
 }
 
+/* Mobile */
 
+@media only screen and (max-width: 651px) {
+  .mobile .feature .info {
+
+  }
+}
 
 /* Change all font colors to COLOR rather than TRANSPARENCY before final */
