@@ -344,6 +344,19 @@ footer p {
   padding: 1rem 0rem 1rem 1.5rem;
 }
 
+nav li:hover {
+  background-color: rgba(232, 232, 232, 1);
+}
+
+.btn:hover {
+  background-color: rgba(42, 42, 42, 1);
+}
+
+.feature:hover {
+  background-color: rgba(232, 232, 232, 1);
+}
+
+
 /* PC Effects */
 
 @media only screen and (min-width: 766px) {
@@ -440,10 +453,11 @@ footer p {
     justify-content: space-around;
   }
 
-  .mobile .cntr img:active {
+  .mobile .cntr img:hover {
     background-color: rgba(232, 232, 232, 1);
-    box-shadow: 0px 5px 30px 2px rgba(161, 161, 161, 1);
-  }
+}
+
+
 
   .pc {
     display: none;
@@ -510,6 +524,11 @@ footer p {
 
   .class h2 {
     padding: 0rem;
+  }
+
+  .class:hover {
+    filter: brightness(120%);
+    box-shadow: 0px 1px 5px black;
   }
 
   .mobile h2 {
